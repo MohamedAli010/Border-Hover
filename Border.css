@@ -1,0 +1,99 @@
+/* Hover */
+.hover
+{
+    width:35%;
+    height:430px;
+    border: 1px solid black;
+    margin: 50px auto;
+    position: relative;
+    letter-spacing: .50px;
+}
+/* Text */
+.text
+{
+    text-align: center;
+    width:100%;
+    margin: 40% auto;
+}
+.text h2
+{
+    font-size: 34px;
+    color:rgb(185, 32, 178)
+}
+/* ::first-letter */
+.text h2::first-letter
+{
+    color:red;
+    font-weight: 900;
+    font-size: 38px;
+}
+/* Span */
+span
+{
+    position: absolute;
+    transition: all .5s ease-in-out;
+}
+/* Child One == Top */
+.hover span:nth-of-type(1)
+{
+    width:0px;
+    height:4px;
+    top:-2px;
+    background-color: red;
+}
+.hover:hover span:nth-of-type(1)
+{
+    width:100%;
+}
+
+/* Child Two == Bottom */
+.hover span:nth-of-type(2)
+{
+    width:0px;
+    height:4px;
+    bottom:-2px;
+    background-color: Green;
+}
+.hover:hover span:nth-of-type(2)
+{
+    width:100%;
+}
+
+/* Child Three == Right */
+.hover span:nth-of-type(3)
+{
+    width:4px;
+    height:0px;
+    right:-2px;
+    background-color: yellow;
+}
+.hover:hover span:nth-of-type(3)
+{
+    height:100%;
+}
+
+/* Child Four == Left */
+.hover span:nth-of-type(4)
+{
+    width:4px;
+    height:0px;
+    left:-2px;
+    background-color: blue;
+}
+.hover:hover span:nth-of-type(4)
+{
+    height:100%;
+}
+
+/* ------------- Media ------------- */
+@media (max-width:700px)
+{
+    .hover
+    {
+        width:70%;
+        height:300px;
+        border: 1px solid black;
+        margin: 50px auto;
+        position: relative;
+    }
+}
